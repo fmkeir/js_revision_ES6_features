@@ -16,8 +16,8 @@ class Library {
   }
 
   printInventory() {
-    this.books.forEach((book) => {
-      console.log(`${book.title} by ${book.author}`);
+    this.books.forEach(({author, title}) => {
+      console.log(`${title} by ${author}`);
     })
   }
 }
